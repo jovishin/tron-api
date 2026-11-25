@@ -1,0 +1,52 @@
+{
+    "name": "jovishin/tron-api",
+    "description": "以此次提取的本機原始碼重現 SDK 的執行期依賴。",
+    "type": "library",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "dependencies/*/*",
+            "options": {
+                "symlink": false,
+                "versions": {
+                    "comely-io/data-types": "1.0.34",
+                    "fgrosse/phpasn1": "v2.4.0",
+                    "guzzlehttp/guzzle": "7.1.1",
+                    "guzzlehttp/promises": "v1.3.1",
+                    "guzzlehttp/psr7": "1.6.1",
+                    "iexbase/web3.php": "2.0.1",
+                    "kornrunner/keccak": "1.1.0",
+                    "kornrunner/secp256k1": "0.1.2",
+                    "mdanter/ecc": "v0.5.2",
+                    "phpseclib/phpseclib": "2.0.36",
+                    "psr/http-client": "1.0.1",
+                    "psr/http-message": "1.0.1",
+                    "ralouphie/getallheaders": "3.0.3",
+                    "simplito/bigint-wrapper-php": "1.0.0",
+                    "simplito/bn-php": "1.1.2",
+                    "simplito/elliptic-php": "1.0.9",
+                    "symfony/polyfill-mbstring": "v1.38.2"
+                }
+            }
+        },
+        {
+            "packagist.org": false
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "comely-io/data-types": "^1.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "iexbase/web3.php": "^2.0.1",
+        "kornrunner/secp256k1": "^0.1.2",
+        "simplito/elliptic-php": "^1.0",
+        "ext-json": "*",
+        "ext-bcmath": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "IEXBase\\TronAPI\\": "src"
+        }
+    }
+}

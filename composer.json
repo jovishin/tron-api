@@ -1,0 +1,59 @@
+{
+    "name": "jovishin/tron-api",
+    "description": "PHP 7.4 的 TRON SDK，源自 iexbase/tron-api 4.0.1，隨附 Web3 2.0.1。",
+    "license": "MIT",
+    "type": "library",
+    "homepage": "https://github.com/jovishin/tron-api",
+    "authors": [
+        {
+            "name": "Shamsudin Serderov",
+            "email": "steein.shamsudin@gmail.com"
+        }
+    ],
+    "keywords": [
+        "iexbase",
+        "tron-lib",
+        "tron-php",
+        "tron-api",
+        "tron-rest-api"
+    ],
+    "require": {
+        "php": "^7.4",
+        "comely-io/data-types": "^1.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "kornrunner/secp256k1": "^0.1.2",
+        "simplito/elliptic-php": "^1.0",
+        "ext-json": "*",
+        "ext-bcmath": "*",
+        "ext-mbstring": "*",
+        "kornrunner/keccak": "~1.0",
+        "phpseclib/phpseclib": "~2.0.11"
+    },
+    "replace": {
+        "iexbase/tron-api": "4.0.1",
+        "iexbase/web3.php": "2.0.1"
+    },
+    "conflict": {
+        "iexbase/tron-api": "!=4.0.1",
+        "iexbase/web3.php": "!=2.0.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "IEXBase\\TronAPI\\": "src",
+            "Web3\\": "dependencies/iexbase/web3.php/src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "IEXBase\\TronAPI\\Test\\": "tests"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
