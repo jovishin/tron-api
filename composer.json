@@ -33,10 +33,6 @@
         "iexbase/tron-api": "4.0.1",
         "iexbase/web3.php": "2.0.1"
     },
-    "conflict": {
-        "iexbase/tron-api": "!=4.0.1",
-        "iexbase/web3.php": "!=2.0.1"
-    },
     "require-dev": {
         "phpunit/phpunit": "^6.0"
     },
